@@ -1,0 +1,123 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="Titanes1.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" scroll="auto" bgcolor="white" cz-shortcut-listen="true">
+
+<table width="785" align="center" class="bordegris" cellpadding="1" cellspacing="1">
+	<tbody><tr><td height="25" class="fondogris" colspan="3" align="right"><a class="texto_10B">Entidad Autorizada por el Banco De España. Nº de Registro 6845</a>&nbsp;&nbsp;</td></tr>
+	<tr>
+		<td width="1" height="100%" bgcolor="#F4F4F4"></td>
+		<td width="535">
+            <asp:Table ID="Table1" runat="server">
+                <asp:TableRow><asp:TableCell> 
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/image/iconoTitanes.PNG" Width="240px" />
+                              </asp:TableCell>
+                    <asp:TableCell> <asp:Image ID="Image2" runat="server" ImageUrl="~/image/globos.PNG" /></asp:TableCell>
+                </asp:TableRow>
+                
+               
+            </asp:Table>
+           </td>
+	</tr>
+	<tr><td width="100%" height="2" class="fondogris" colspan="3"></td></tr>
+	<tr>
+		<td background="img/fondo_rayas.jpg" height="30" colspan="3" align="right">
+            <asp:Table ID="Table2" runat="server" BackImageUrl="~/image/fondoRayas.PNG" Width="100%">
+                <asp:TableRow>
+                <asp:TableCell></asp:TableCell>
+                     <asp:TableCell>
+                         <asp:HyperLink ID="HyperLink1" runat="server">Informacion</asp:HyperLink></asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="HyperLink2" runat="server">Servicios</asp:HyperLink></asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="HyperLink3" runat="server">conviertase en Agente</asp:HyperLink>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="HyperLink4" runat="server">corresponsales</asp:HyperLink></asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="HyperLink5" runat="server">realice su envio</asp:HyperLink></asp:TableCell>
+                    <asp:TableCell><asp:HyperLink ID="HyperLink6" runat="server">Viajes</asp:HyperLink></asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="HyperLink7" runat="server">contacte</asp:HyperLink></asp:TableCell>
+            </asp:TableRow>
+                	<asp:TableFooterRow></asp:TableFooterRow>		
+                </asp:Table>		
+			
+		</td>
+	</tr>
+	<tr><td width="100%" height="2" class="fondogris" colspan="3"></td></tr>
+        <tr>
+            <div>
+                <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+				</form>
+            </div>
+            
+        </tr>
+	<tr>
+		<td width="100%" colspan="3" align="center" background="img/pie6.jpg">
+              <asp:Table ID="Table3" runat="server" BackImageUrl="~/image/fondoRayas.PNG" Width="98%">
+                <asp:TableRow>
+                <asp:TableCell></asp:TableCell>
+                     <asp:TableCell>
+                         <asp:HyperLink ID="HyperLink8" runat="server">Página de Inicio</asp:HyperLink></asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="HyperLink9" runat="server">Política de privacidad</asp:HyperLink></asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="HyperLink10" runat="server">Política de cookies</asp:HyperLink>
+                    </asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="HyperLink11" runat="server">Servicio de Atención al Cliente</asp:HyperLink></asp:TableCell>
+                    <asp:TableCell>
+                        <asp:HyperLink ID="HyperLink12" runat="server">Condiciones Generales</asp:HyperLink></asp:TableCell>
+                   
+                   
+            </asp:TableRow>
+                	<asp:TableFooterRow></asp:TableFooterRow>		
+                </asp:Table>	
+			</table>
+		
+
+
+<div id="avisocookies">
+<!-- use class="debug" here if you develope a template and want to check-->
+
+<meta charset="UTF-8">
+
+
+	<!-- Aviso de cookies-->	
+	<div class="wrapper">
+		<div id="cookie-policy" class="boxcokkie" style="bottom: 0px; display: block;">
+			<div class="bg"></div>
+			<div class="content">
+				<a id="close" href="javascript:void(0);" onclick="aceptarcookies();">Entendido</a>
+				<p class="texto_aviso">
+					Utilizamos cookies para mejorar la experiencia de nuestros usuarios mientras navegan por nuestras páginas. 
+					Si continúa navegando, estará aceptando nuestra 
+					<b><a id="politicacookies" href="http://www.grupotitanes.com/cookies.html" target="_blank">Política de Cookies</a></b>.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Script Aviso de Cookies-->		
+				
+
+
+</div>
+
+
+
+</body>
+</html>
